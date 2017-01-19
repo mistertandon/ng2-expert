@@ -1,8 +1,10 @@
-<di-hero-bio [heroID_DIHBCP]=1>
-</di-hero-bio>
+<div class="heroInfoContainer">
 
-<di-hero-bio [heroID_DIHBCP]=2>
-</di-hero-bio>
+    <di-hero-bio *ngFor="let heroInfoObj of herosInfoArray" [heroID_DIHBCP]="heroInfoObj.id">
 
-<di-hero-bio [heroID_DIHBCP]=3>
-</di-hero-bio>
+        <di-hero-contact>
+        </di-hero-contact>
+
+    </di-hero-bio>
+
+</div>

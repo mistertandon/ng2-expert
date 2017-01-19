@@ -19,7 +19,7 @@ export class DependencyInjectionCachedHerosBiodataService {
      *cachedHeroBioData: Varibale used to cached particular hero biodata.
      *
      **/
-    private cachedHeroBioData: DependencyInjectionHeroBiodataClass;
+    public cachedHeroBioData: DependencyInjectionHeroBiodataClass;
 
     constructor(private DIHerosBiodata_S: DependencyInjectionHerosBiodataService) {
 

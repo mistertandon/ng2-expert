@@ -9,7 +9,7 @@ import {
 @Injectable()
 export class DependencyInjectionHerosBiodataService {
 
-    public herosBioDataArr: [DependencyInjectionHeroBiodataClass] = [
+    private herosBioDataArr: [DependencyInjectionHeroBiodataClass] = [
 
         new DependencyInjectionHeroBiodataClass(1, 'parvesh', '9650780712', 'Angular 2 Developer.'),
         new DependencyInjectionHeroBiodataClass(2, 'praveen', '8094663521', 'Node Js Developer.'),

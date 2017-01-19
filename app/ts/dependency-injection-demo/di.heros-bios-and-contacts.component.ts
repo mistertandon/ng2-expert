@@ -4,6 +4,14 @@ import {
     OnInit
 } from '@angular/core';
 
+import {
+    DependencyInjectionHeroBiodataClass
+} from './../custom-classes/dependency-injection-hero-biodata.class';
+
+import {
+    DependencyInjectionHerosBiodataService
+} from './../custom-services/dependency-injection-heros-biodata.service';
+
 @Component({
 
     selector: "di-heros-bios-and-contacts",
@@ -13,9 +21,15 @@ import {
 })
 export class DiHerosBiosAndContactsComponent implements OnInit {
 
-    constructor() {}
+    /**
+     *herosInfoArray: An Array of heros, containg DependencyInjectionHeroBiodataClass type element as Array value.
+     **/
+    public herosInfoArray: [DependencyInjectionHeroBiodataClass];
+
+    constructor(private DIHerosBiodata_S: DependencyInjectionHerosBiodataService) {}
 
     ngOnInit(): void {
 
+        this.herosInfoArray = this.DIHerosBiodata_S.getAllHerosBioData_DIHBSM();
     }
 }

@@ -18,8 +18,17 @@ import {
     DiHeroBiodataComponent
 } from './di.hero-bio.component';
 
+import {
+    DiHeroContactComponent
+} from './di.hero-contact.component';
+
 @NgModule({
     imports: [CommonModule],
-    declarations: [DiComponent, DiHerosBiosAndContactsComponent, DiHeroBiodataComponent]
+    declarations: [
+        DiComponent,
+        DiHerosBiosAndContactsComponent,
+        DiHeroBiodataComponent,
+        DiHeroContactComponent
+    ]
 })
 export class DiModule {}
