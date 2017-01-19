@@ -7,6 +7,10 @@ import {
 } from '@angular/common';
 
 import {
+    BrowserModule
+} from '@angular/platform-browser';
+
+import {
     DiComponent
 } from './di.component';
 
@@ -22,13 +26,18 @@ import {
     DiHeroContactComponent
 } from './di.hero-contact.component';
 
+import {
+    DependencyInjectionHighlightDirective
+} from './../custom-directives/di.highlight-directive';
+
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, BrowserModule],
     declarations: [
         DiComponent,
         DiHerosBiosAndContactsComponent,
         DiHeroBiodataComponent,
-        DiHeroContactComponent
+        DiHeroContactComponent,
+        DependencyInjectionHighlightDirective
     ]
 })
 export class DiModule {}

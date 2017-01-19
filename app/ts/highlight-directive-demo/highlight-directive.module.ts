@@ -19,5 +19,3 @@ import {
     declarations: [HighLightDirective, HighlightDirectiveComponent]
 })
 export class HighlightDirectiveModule {}
-
-	//	exports: [HighlightDirectiveComponent]

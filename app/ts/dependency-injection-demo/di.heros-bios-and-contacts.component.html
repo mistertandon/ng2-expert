@@ -1,10 +1,14 @@
-<div class="heroInfoContainer">
+<div class="row">
+    <div class="col-lg-6 heroBioDataAndContactsContainer" diHighlight diColorCodeP="Cyan">
+        <div>
 
-    <di-hero-bio *ngFor="let heroInfoObj of herosInfoArray" [heroID_DIHBCP]="heroInfoObj.id">
+            <di-hero-bio *ngFor="let heroInfoObj of herosInfoArray" [heroID_DIHBCP]="heroInfoObj.id">
 
-        <di-hero-contact>
-        </di-hero-contact>
+                <di-hero-contact>
+                </di-hero-contact>
 
-    </di-hero-bio>
+            </di-hero-bio>
 
+        </div>
+    </div>
 </div>
