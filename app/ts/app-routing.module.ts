@@ -35,29 +35,35 @@ import {
     HighlightDirectiveComponent
 } from './highlight-directive-demo/highlight-directive.component';
 
+import {
+    DiComponent
+} from './dependency-injection-demo/di.component';
+
 const ROUTES_CONF: Routes = [{
-        path: 'heros',
-        component: HerosMasterComponent
-    }, {
-        path: 'dashboardheroes',
-        component: DashboardComponent
-    }, {
-        path: 'herodetail/:id',
-        component: HeroDetailComponent
-    }, {
-        path: 'addhero',
-        component: HeroFormComponent
-    }, {
-        path: 'addheroreactive',
-        component: HeroFormReactiveComponent
-    }, {
-        path: 'addherodynamic',
-        component: DynamicHeroFormComponent
-    }, {
-        path: 'highlightdirective',
-        component: HighlightDirectiveComponent
-    } 
-];
+    path: 'heros',
+    component: HerosMasterComponent
+}, {
+    path: 'dashboardheroes',
+    component: DashboardComponent
+}, {
+    path: 'herodetail/:id',
+    component: HeroDetailComponent
+}, {
+    path: 'addhero',
+    component: HeroFormComponent
+}, {
+    path: 'addheroreactive',
+    component: HeroFormReactiveComponent
+}, {
+    path: 'addherodynamic',
+    component: DynamicHeroFormComponent
+}, {
+    path: 'highlightdirective',
+    component: HighlightDirectiveComponent
+}, {
+    path: 'diherosdetail',
+    component: DiComponent
+}];
 
 @NgModule({
     imports: [RouterModule.forRoot(ROUTES_CONF)],

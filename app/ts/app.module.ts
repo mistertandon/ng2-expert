@@ -50,6 +50,10 @@ import {
     HighlightDirectiveModule
 } from './highlight-directive-demo/highlight-directive.module';
 
+import {
+    DiModule
+} from './dependency-injection-demo/di.module';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -57,7 +61,8 @@ import {
         AppRoutingModule,
         HeroFormReactiveModule,
         DynamicHeroFormModule,
-        HighlightDirectiveModule
+        HighlightDirectiveModule,
+        DiModule
     ],
     declarations: [
         AppComponent,
