@@ -54,6 +54,10 @@ import {
     DiModule
 } from './dependency-injection-demo/di.module';
 
+import {
+    DiWithProvidersModule
+} from './di-with-providers-demo/di-with-providers.module';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -62,7 +66,8 @@ import {
         HeroFormReactiveModule,
         DynamicHeroFormModule,
         HighlightDirectiveModule,
-        DiModule
+        DiModule,
+        DiWithProvidersModule
     ],
     declarations: [
         AppComponent,

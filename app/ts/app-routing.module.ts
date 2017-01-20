@@ -39,6 +39,10 @@ import {
     DiComponent
 } from './dependency-injection-demo/di.component';
 
+import {
+    DiWithProvidersComponent
+} from './di-with-providers-demo/di-with-providers.component';
+
 const ROUTES_CONF: Routes = [{
     path: 'heros',
     component: HerosMasterComponent
@@ -63,7 +67,11 @@ const ROUTES_CONF: Routes = [{
 }, {
     path: 'diherosdetail',
     component: DiComponent
+}, {
+    path: 'diwithproviders',
+    component: DiWithProvidersComponent
 }];
+
 
 @NgModule({
     imports: [RouterModule.forRoot(ROUTES_CONF)],
