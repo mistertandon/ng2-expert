@@ -8,7 +8,7 @@ export class LoggerService {
 		/**
 		 *logsArr: Property used to store all the provided logged messaged for current request life cycle.
 		 **/
-    private logsArr: string[] = [];
+    public logsArr: string[] = [];
 
     constructor() {}
 

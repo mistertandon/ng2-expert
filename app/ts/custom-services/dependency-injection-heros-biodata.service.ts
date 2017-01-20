@@ -13,7 +13,8 @@ export class DependencyInjectionHerosBiodataService {
 
         new DependencyInjectionHeroBiodataClass(1, 'parvesh', '9650780712', 'Angular 2 Developer.'),
         new DependencyInjectionHeroBiodataClass(2, 'praveen', '8094663521', 'Node Js Developer.'),
-        new DependencyInjectionHeroBiodataClass(3, 'khuda baksh', '9650780712', 'Laravel 5.3 Developer.')
+        new DependencyInjectionHeroBiodataClass(3, 'khuda baksh', '9650780712', 'Laravel 5.3 Developer.'),
+        new DependencyInjectionHeroBiodataClass(4, 'prabhash', '9650780712', 'PHP Developer.')
     ];
 
 
