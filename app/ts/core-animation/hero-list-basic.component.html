@@ -1,0 +1,5 @@
+<div class="row haro-basic-list-row" *ngFor="let hero of heroes" [@herostate]="hero.state" (click) = "hero.stateToggle()" >
+    <div class="col-sm-8 col-sm-offset-2">
+        {{hero.name}}
+    </div>
+</div>

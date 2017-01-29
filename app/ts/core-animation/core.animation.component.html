@@ -1,0 +1,43 @@
+<div class='container'>
+
+    <div class='row'>
+        <div class='col-md-3 col-offset-1'>
+
+            <button class="btn btn-success btn-sm" [disabled]=!ANIMATION_HEROS_S.canAdd() (click)="ANIMATION_HEROS_S.addActiveHero_CAHS()"> Add Active Hero</button>
+
+        </div>
+        <div class='col-md-3 col-offset-1'>
+
+            <button class="btn btn-success btn-sm" [disabled]=!ANIMATION_HEROS_S.canAdd() (click)="ANIMATION_HEROS_S.addActiveHero_CAHS()"> Add Active Hero</button>
+
+        </div>
+        <div class='col-md-3 col-offset-1'>
+            Third
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            Basic State
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <hero-list-basic [heroes]=ANIMATION_HEROS_S> </hero-list-basic>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+</div>

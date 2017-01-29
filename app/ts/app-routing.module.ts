@@ -43,6 +43,10 @@ import {
     DiWithProvidersComponent
 } from './di-with-providers-demo/di-with-providers.component';
 
+import {
+    CoreAnimationComponent
+} from './core-animation/core.animation.component';
+
 const ROUTES_CONF: Routes = [{
     path: 'heros',
     component: HerosMasterComponent
@@ -70,7 +74,11 @@ const ROUTES_CONF: Routes = [{
 }, {
     path: 'diwithproviders',
     component: DiWithProvidersComponent
+}, {
+    path: 'coreanimation',
+    component: CoreAnimationComponent
 }];
+
 
 
 @NgModule({

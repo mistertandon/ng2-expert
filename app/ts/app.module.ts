@@ -58,6 +58,10 @@ import {
     DiWithProvidersModule
 } from './di-with-providers-demo/di-with-providers.module';
 
+import {
+    CoreAnimationModule
+} from './core-animation/core.animation.module';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -67,7 +71,8 @@ import {
         DynamicHeroFormModule,
         HighlightDirectiveModule,
         DiModule,
-        DiWithProvidersModule
+        DiWithProvidersModule,
+        CoreAnimationModule
     ],
     declarations: [
         AppComponent,
